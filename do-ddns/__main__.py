@@ -24,6 +24,7 @@ class DigitalOceanDDNS:
             try:
                 res = requests.get(ip_service)
                 ip = res.text
+                break
             except requests.exceptions.BaseHTTPError as e:
                 print(e)
                 continue
