@@ -48,6 +48,7 @@ class DigitalOceanDDNS:
 
         # if they match, return
         if a_record['data'] == ip:
+            print('IP address is already up to date on DigitalOcean')
             return
 
         # if they don't match, update the record on DO
